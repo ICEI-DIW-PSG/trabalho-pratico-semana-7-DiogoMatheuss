@@ -79,3 +79,45 @@ function carregarCardsNaHome() {
 if (document.getElementById('lista-personagens')) {
     carregarCardsNaHome();
 }
+
+
+// Função para buscar um item pelo ID na Query String
+function carregarDetalhesDoItem() {
+    const container = document.getElementById('detalhes-personagem');
+    if (!container) return; 
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = parseInt(urlParams.get('id')); 
+
+    const personagem = personagens.find(p => p.id === id);
+
+    if (personagem) {
+        container.innerHTML = `
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="${personagem.imagem}" class="img-fluid rounded shadow" alt="${personagem.nome}">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4 border-bottom pb-2 mb-3">${personagem.nome} <span class="badge bg-secondary h5">${personagem.funcao}</span></h1>
+                    <p class="lead">${personagem.descricao_completa}</p>
+                    
+                    <h4 class="mt-4">Informações Chave:</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Sonho:</strong> ${personagem.sonho}</li>
+                        <li class="list-group-item"><strong>Habilidade Principal:</strong> ${personagem.habilidade}</li>
+                        <li class="list-group-item"><strong>Recompensa:</strong> ${personagem.recompensa}</li>
+                    </ul>
+                    
+                    <a href="index.html" class="btn btn-primary mt-4">Voltar para a Home</a>
+                </div>
+            </div>
+        `;
+    } else {
+        container.innerHTML = '<h1 class="text-danger">Personagem não encontrado!</h1><p>Verifique o ID na URL.</p>';
+    }
+}
+
+// Executar a função ao carregar a página (apenas se for a detalhes.html)
+if (document.getElementById('detalhes-personagem')) {
+    carregarDetalhesDoItem();
+}

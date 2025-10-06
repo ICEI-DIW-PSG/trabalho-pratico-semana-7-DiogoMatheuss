@@ -1,4 +1,3 @@
-// app.js
 
 const personagens = [
     {
@@ -46,7 +45,6 @@ const personagens = [
         "descricao_completa": "Nami é a navegadora e cartógrafa da tripulação. Possui uma habilidade incrível para prever o clima e é responsável pela navegação precisa nos mares perigosos. Seu objetivo é desenhar um mapa completo de todo o mundo."
     }
 ];
-// app.js (continuação)
 
 // Função para gerar o HTML do Card
 function criarCard(personagem) {

@@ -13,14 +13,15 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Diogo Matheus
+- Matricula:903817
+- Proposta de projeto escolhida:Temas e Conteúdos Associados
+- Breve descrição sobre seu projeto:One piece q é um anime/manga e seus personagens
+
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![wireframe](public/csspuro.png)
 
 ## Print da página de detalhes do item
 
@@ -29,16 +30,49 @@ Leia o enunciado completo no Canvas.
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
-  {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
-  }
-]
-```
+const personagens = [
+    {
+        "id": 1,
+        "nome": "Monkey D. Luffy",
+        "funcao": "Capitão",
+        "sonho": "Se tornar o Rei dos Piratas",
+        "habilidade": "Fruta Gomu Gomu no Mi (Homem-Borracha)",
+        "recompensa": "3.000.000.000 Berries",
+        "imagem": "luffy.png",
+        "descricao_curta": "Capitão dos Chapéus de Palha e futuro Rei dos Piratas.",
+        "descricao_completa": "Luffy é o protagonista da série, conhecido por sua personalidade alegre e seu desejo inabalável de liberdade. Comeu a Fruta do Diabo Gomu Gomu no Mi, transformando seu corpo em borracha. Sua busca pelo One Piece é a força motriz da história."
+    },
+    {
+        "id": 2,
+        "nome": "Roronoa Zoro",
+        "funcao": "Espadachim",
+        "sonho": "Ser o maior Espadachim do mundo",
+        "habilidade": "Estilo Santoryu (Três Espadas)",
+        "recompensa": "1.111.000.000 Berries",
+        "imagem": "zoro.jpg",
+        "descricao_curta": "Espadachim que sonha em ser o melhor do mundo.",
+        "descricao_completa": "Zoro foi o primeiro membro a se juntar a Luffy. Ele usa o estilo de luta Santoryu, manejando três espadas simultaneamente. Apesar de seu senso de direção terrível, ele é um lutador leal e determinado a cumprir seu voto."
+    },
+    {
+        "id": 3,
+        "nome": "Sanji",
+        "funcao": "Cozinheiro",
+        "sonho": "Encontrar o All Blue",
+        "habilidade": "Estilo de luta com as pernas (Black Leg)",
+        "recompensa": "1.032.000.000 Berries",
+        "imagem": "sanji.jpg",
+        "descricao_curta": "Cozinheiro que busca o mar lendário All Blue.",
+        "descricao_completa": "Sanji é o cozinheiro da tripulação, com uma regra de nunca usar as mãos para lutar, protegendo-as para cozinhar. Seu sonho é encontrar o All Blue, um mar lendário onde peixes de todos os oceanos se reúnem."
+    },
+    {
+        "id": 4,
+        "nome": "Nami",
+        "funcao": "Navegadora/Cartógrafa",
+        "sonho": "Mapear o mundo inteiro",
+        "habilidade": "Controle climático (Clima-Tact)",
+        "recompensa": "366.000.000 Berries",
+        "imagem": "nami.jpg",
+        "descricao_curta": "Cartógrafa que deseja mapear o mundo inteiro.",
+        "descricao_completa": "Nami é a navegadora e cartógrafa da tripulação. Possui uma habilidade incrível para prever o clima e é responsável pela navegação precisa nos mares perigosos. Seu objetivo é desenhar um mapa completo de todo o mundo."
+    }
+];

@@ -21,11 +21,11 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-![wireframe](public/csspuro.png)
+![Home Page](public/home.png)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Detalhes](public/detalhes.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
